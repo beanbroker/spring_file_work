@@ -23,7 +23,7 @@ public class FileObserverUpgrade {
 
         try {
 
-            //워치 서비스에 이벤트들 등
+            //워치 서비스에 이벤트들 등록
             WatchService fileWatchService = FileSystems.getDefault().newWatchService();
             faxFolder.register(fileWatchService,
                     StandardWatchEventKinds.ENTRY_CREATE,
